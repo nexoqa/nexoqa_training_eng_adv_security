@@ -1,0 +1,12 @@
+version: '3'
+services:
+  bwapp:
+    image: tutum/lamp:latest
+    working_dir: /app
+    container_name: nexoqa-eng-adv-bwapp
+    volumes:
+      - ./app:/app
+    ports:
+      - 8001:80
+    command: "/run.sh"
+
